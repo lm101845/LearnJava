@@ -1,0 +1,21 @@
+package chapter01;
+
+public class TestVar2 {
+	public static void main(String[] args) {
+		boolean b = true;
+  int x, y = 9;		//x是没有被赋值的，9是给y赋值的
+  double d = 3.1415;
+  char c1, c2;
+  c1 = '\u534e';  
+  c2 = 'c';
+  x = 12;
+  System.out.println("b=" + b);
+  System.out.println
+             ("x=" + x + ",y=" + y);
+  System.out.println("d=" + d);
+  System.out.println("c1=" + c1);
+  System.out.println("c2=" + c2);
+
+}
+
+}
