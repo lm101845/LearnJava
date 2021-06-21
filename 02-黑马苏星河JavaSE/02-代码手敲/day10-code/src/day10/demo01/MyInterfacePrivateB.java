@@ -8,8 +8,6 @@ package day10.demo01;
 /**
  * 接口当中静态方法也可能产生重复代码的问题
  *
- *
- *
 */
 public interface MyInterfacePrivateB {
     public static void methodStatic1(){

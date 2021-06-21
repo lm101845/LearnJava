@@ -20,7 +20,7 @@ public class Demo03IfElseExt{
 			System.out.println("中等");
 		}else if(score >= 60 && score < 70){
 			System.out.println("及格");
-		}else if{score >= 0 && score < 60){
+		}else if(score >= 0 && score < 60){
 			System.out.println("不及格");
 		}else {	//边界情况，复数或者超过100
 			System.out.println("数据错误");
