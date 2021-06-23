@@ -4,6 +4,7 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 out/
+out
 # Other files and folders
 .settings/
 
