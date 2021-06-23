@@ -26,7 +26,7 @@ public class ListIteratorDemo {
         list.add("world");
         list.add("java");
 
-        //通过List集合的listIterator​()方法得到
+        //通过List集合的listIterator()方法得到
 //        ListIterator<String> lit = list.listIterator();
 //        while (lit.hasNext()) {
 //            String s = lit.next();
