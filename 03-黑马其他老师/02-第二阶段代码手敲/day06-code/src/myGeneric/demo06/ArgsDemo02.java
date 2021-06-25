@@ -1,22 +1,26 @@
-package com.itheima_06;
+package myGeneric.demo06;
 
-import java.util.Arrays;
-import java.util.List;
+/**
+ * @author ÀîÃ÷
+ * @date 2021Äê06ÔÂ25ÈÕ 22:38
+ */
+
+
 import java.util.Set;
 
-/*
-    Arrayså·¥å…·ç±»ä¸­æœ‰ä¸€ä¸ªé™æ€æ–¹æ³•ï¼š
-        public static <T> List<T> asListâ€‹(T... a)ï¼šè¿”å›ç”±æŒ‡å®šæ•°ç»„æ”¯æŒçš„å›ºå®šå¤§å°çš„åˆ—è¡¨
-
-    Listæ¥å£ä¸­æœ‰ä¸€ä¸ªé™æ€æ–¹æ³•ï¼š
-        public static <E> List<E> ofâ€‹(E... elements)ï¼šè¿”å›åŒ…å«ä»»æ„æ•°é‡å…ƒç´ çš„ä¸å¯å˜åˆ—è¡¨
-
-    Setæ¥å£ä¸­æœ‰ä¸€ä¸ªé™æ€æ–¹æ³•ï¼š
-        public static <E> Set<E> ofâ€‹(E... elements) ï¼šè¿”å›ä¸€ä¸ªåŒ…å«ä»»æ„æ•°é‡å…ƒç´ çš„ä¸å¯å˜é›†åˆ
+/**
+ * Arrays¹¤¾ßÀàÖĞÓĞÒ»¸ö¾²Ì¬·½·¨£º
+ * public static <T> List<T> asList(T... a)£º·µ»ØÓÉÖ¸¶¨Êı×éÖ§³ÖµÄ¹Ì¶¨´óĞ¡µÄÁĞ±í
+ * <p>
+ * List½Ó¿ÚÖĞÓĞÒ»¸ö¾²Ì¬·½·¨£º
+ * public static <E> List<E> of(E... elements)£º·µ»Ø°üº¬ÈÎÒâÊıÁ¿ÔªËØµÄ²»¿É±äÁĞ±í
+ * <p>
+ * Set½Ó¿ÚÖĞÓĞÒ»¸ö¾²Ì¬·½·¨£º
+ * public static <E> Set<E> of(E... elements) £º·µ»ØÒ»¸ö°üº¬ÈÎÒâÊıÁ¿ÔªËØµÄ²»¿É±ä¼¯ºÏ
  */
 public class ArgsDemo02 {
     public static void main(String[] args) {
-        //public static <T> List<T> asList(T... a)ï¼šè¿”å›ç”±æŒ‡å®šæ•°ç»„æ”¯æŒçš„å›ºå®šå¤§å°çš„åˆ—è¡¨
+        //public static <T> List<T> asList(T... a)£º·µ»ØÓÉÖ¸¶¨Êı×éÖ§³ÖµÄ¹Ì¶¨´óĞ¡µÄÁĞ±í
 //        List<String> list = Arrays.asList("hello", "world", "java");
 //
 ////        list.add("javaee"); //UnsupportedOperationException
@@ -25,7 +29,7 @@ public class ArgsDemo02 {
 //
 //        System.out.println(list);
 
-        //public static <E> List<E> ofâ€‹(E... elements)ï¼šè¿”å›åŒ…å«ä»»æ„æ•°é‡å…ƒç´ çš„ä¸å¯å˜åˆ—è¡¨
+        //public static <E> List<E> of(E... elements)£º·µ»Ø°üº¬ÈÎÒâÊıÁ¿ÔªËØµÄ²»¿É±äÁĞ±í
 //        List<String> list = List.of("hello", "world", "java", "world");
 //
 ////        list.add("javaee");//UnsupportedOperationException
@@ -34,7 +38,7 @@ public class ArgsDemo02 {
 //
 //        System.out.println(list);
 
-        //public static <E> Set<E> ofâ€‹(E... elements) ï¼šè¿”å›ä¸€ä¸ªåŒ…å«ä»»æ„æ•°é‡å…ƒç´ çš„ä¸å¯å˜é›†åˆ
+        //public static <E> Set<E> of(E... elements) £º·µ»ØÒ»¸ö°üº¬ÈÎÒâÊıÁ¿ÔªËØµÄ²»¿É±ä¼¯ºÏ
 //        Set<String> set = Set.of("hello", "world", "java","world"); //IllegalArgumentException
         Set<String> set = Set.of("hello", "world", "java");
 
