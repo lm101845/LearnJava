@@ -10,6 +10,6 @@ public class Demo01People {
         //王思聪,你好，我是王思聪——这就不对了！！！！
 
         System.out.println(people);
-        //day06.demo04.People@6e8dacdf
+        //day06.MyMap.demo04.People@6e8dacdf
     }
 }

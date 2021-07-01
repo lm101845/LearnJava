@@ -5,7 +5,7 @@ package day06.demo01;
 
 1. 导包：也就是指出需要使用的类，在什么位置。
 import 包名称.类名称;
-import day06.demo01.Student;
+import day06.MyMap.demo01.Student;
 对于和当前类属于同一个包的情况，可以省略导包语句不写。
 
 2. 创建，格式：

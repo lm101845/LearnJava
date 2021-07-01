@@ -13,7 +13,7 @@ public class Teacher extends Employee{
         Teacher teacher = new Teacher();
         //创建了一个子类对象
         System.out.println(teacher);
-        //day09.demo01.Teacher@75412c2f
+        //day09.MyMap.demo01.Teacher@75412c2f
 
         teacher.method();
         //父类方法执行了

@@ -23,6 +23,6 @@ public class People {
         //但是局部变量名前什么都不要写！！！！！！！
         //this关键字可以解决重名，分不开的问题
         System.out.println(this);
-        //day06.demo04.People@6e8dacdf
+        //day06.MyMap.demo04.People@6e8dacdf
     }
 }

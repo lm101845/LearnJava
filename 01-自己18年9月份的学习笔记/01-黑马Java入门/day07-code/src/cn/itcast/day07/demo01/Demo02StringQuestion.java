@@ -29,7 +29,7 @@ public class Demo02StringQuestion {
 		System.out.println(str);   //Hello
 		
 		Person per = new Person();
-		System.out.println(per);    //cn.itcast.day07.demo01.Person@299a06ac
+		System.out.println(per);    //cn.itcast.day07.MyMap.demo01.Person@299a06ac
 		
 	}	
 	

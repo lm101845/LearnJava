@@ -31,7 +31,7 @@ public class Demo01Array {
         System.out.println(array[0]);   //地址值
         System.out.println(array[1]);   //地址值
         System.out.println(array[2]);   //地址值
-        //day07.demo04.Person@13b6d03
+        //day07.MyMap.demo04.Person@13b6d03
 
         Person person = array[1];
         System.out.println(person.getName());  //古力娜扎

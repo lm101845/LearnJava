@@ -7,5 +7,5 @@ package day11.demo01;
 
 // 不能使用一个final类来作为父类
 public class MySubClass /*extends MyClass*/{
-    // 报错：Cannot inherit from final 'day11.demo01.MyClass'
+    // 报错：Cannot inherit from final 'day11.MyMap.demo01.MyClass'
 }
