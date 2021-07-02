@@ -17,14 +17,14 @@ public class FileInputStreamDemo02 {
         FileInputStream fis = new FileInputStream("myByteStream\\fos.txt");
 
         //调用字节输入流对象的读数据方法
-        //int read​(byte[] b)：从该输入流读取最多 b.length个字节的数据到一个字节数组
+        //int read(byte[] b)：从该输入流读取最多 b.length个字节的数据到一个字节数组
         /*
         byte[] bys = new byte[5];
 
         //第一次读取数据
         int len = fis.read(bys);
         System.out.println(len);
-        //String​(byte[] bytes)
+
 //        System.out.println(new String(bys));
         System.out.println(new String(bys,0,len));
 
@@ -37,7 +37,7 @@ public class FileInputStreamDemo02 {
         //第三次读取数据
         len = fis.read(bys);
         System.out.println(len);
-        //String​(byte[] bytes, int offset, int length)
+        //String(byte[] bytes, int offset, int length)
         System.out.println(new String(bys,0,len));
 
         //再多读取两次
