@@ -7,6 +7,7 @@ out/
 out
 # Other files and folders
 .settings/
+*mp4
 
 # Executables
 *.swf
