@@ -1,4 +1,4 @@
-package demo03;
+package demo06;
 
 /**
  * @Author 李明
@@ -6,25 +6,9 @@ package demo03;
  **/
 
 
-import java.util.*;
-public class BasicContainer {
-    public static void main(String[] args) {
-        Collection c = new HashSet();
-        c.add("hello");
-        c.add(new Name("f1","11"));
-        c.add(new Integer(100));
-
-        c.remove("hello");
-        System.out.println(c.remove(new Name("f1","11")));
-        c.remove(new Integer(100));
-        //false  它们2个不equals，因为没有重写equals方法  重写后就成true了
-        System.out.println(c);
-    }
-}
-
-class Name{
+class Name {
     private String firstName,lastName;
-    public Name(String firstName,String lastName){
+    public Name(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
     }
