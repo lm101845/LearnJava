@@ -10,7 +10,7 @@
 
 * 我现在`E:\01-code\28-LearnJavaSE★\LearnJavaSE\04-马士兵JavaSE`下新建了`basic-code`空文件夹,然后`File-New-Project`,project name选择`basic-code`,路径选择`xxx\basic-code`。
 * 现在`basic-code`就是一个`project`,就是最大的一个东西了。
-* 然后选择`File----->project structure------>Modules----->选择第一个java---->next---->module name起一个英文的`即可。
+* 然后选择`File----->project structure------>Modules----->选择第一个java(不是空项目！！)---->next---->module name起一个英文的`即可。
 * project下面是module,module下面是package。
 
 ### 快捷键
