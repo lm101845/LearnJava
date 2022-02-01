@@ -17,10 +17,12 @@ public class MyThreadDemo {
         MyThread my1 = new MyThread();
         MyThread my2 = new MyThread();
 
-//        my1.run();
-//        my2.run();
-//        注意：run方法的调用并没有启动线程，调用start方法才会启动线程
-//        void start() 导致此线程开始执行; Java虚拟机调用此线程的run方法
+        //my1.run();
+        //my2.run();
+        //注意：run方法的调用并没有启动线程，调用start方法才会启动线程
+        //void start() 导致此线程开始执行; Java虚拟机调用此线程的run方法
+        //使该线程开始执行；Java 虚拟机调用该线程的 run 方法。
+        //start方法，底层最终还是调用的是run方法的
         my1.start();
         my2.start();
     }

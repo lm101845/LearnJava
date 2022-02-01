@@ -61,7 +61,6 @@ public class Demo04ArrayListReturn {
                 smallList.add(num);
             }
         }
-
         return smallList;
     }
 }
