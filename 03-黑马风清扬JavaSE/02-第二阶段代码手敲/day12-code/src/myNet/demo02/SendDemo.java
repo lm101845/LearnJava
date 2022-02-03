@@ -35,7 +35,7 @@ public class SendDemo {
 //        DatagramPacket dp = new DatagramPacket(bys,length,address,port);
 
 //        上面的代码写的有点麻烦了，我们来优化一下
-        DatagramPacket dp = new DatagramPacket(bys,bys.length,InetAddress.getByName("192.168.1.5"),10086);
+        DatagramPacket dp = new DatagramPacket(bys,bys.length,InetAddress.getByName("192.168.1.6"),10088);
 
         //调用DatagramSocket对象的方法发送数据
         //void send(DatagramPacket p) 从此套接字发送数据报包
@@ -45,6 +45,4 @@ public class SendDemo {
         //void close() 关闭此数据报套接字
         ds.close();
     }
-
-
 }

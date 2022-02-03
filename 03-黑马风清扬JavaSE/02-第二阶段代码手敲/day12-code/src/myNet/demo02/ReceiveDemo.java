@@ -22,7 +22,7 @@ public class ReceiveDemo {
     //创建接收端的Socket对象(DatagramSocket)
     //DatagramSocket(int port) 构造数据报套接字并将其绑定到本地主机上的指定端口
     public static void main(String[] args) throws IOException {
-        DatagramSocket ds = new DatagramSocket(10086);
+        DatagramSocket ds = new DatagramSocket(10088);
 
         //创建一个数据包，用于接收数据
         //DatagramPacket(byte[] buf, int length) 构造一个 DatagramPacket用于接收长度为 length数据包
