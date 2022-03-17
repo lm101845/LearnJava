@@ -16,6 +16,7 @@ public class Computer {
     //使用USB设备的方法，使用接口作为方法的参数
     public void useDevice(USB usb){
         //接口和父类没有太大的区别，都可以作为方法的参数
+        //可以把接口就大体理解为父类
         usb.open();   //打开设备
         if(usb instanceof Mouse){   //一定要先判断
             Mouse mouse = (Mouse) usb;   //再向下转型

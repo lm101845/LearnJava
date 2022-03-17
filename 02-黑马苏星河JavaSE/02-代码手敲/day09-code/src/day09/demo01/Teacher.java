@@ -20,8 +20,8 @@ public class Teacher extends Employee{
         //Teacher类中虽然什么都没写，但是会继承来自父类的method方法
 
 
-        Assistant assistant = new Assistant();
-        //创建另一个子类助教的对象
-        assistant.method();
+//        Assistant assistant = new Assistant();
+//        //创建另一个子类助教的对象
+//        assistant.method();
     }
 }

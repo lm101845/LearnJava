@@ -20,7 +20,7 @@ public class MainRedPacket{
         System.out.println("============");
 
         //群主总共发20块钱，分成3个红包
-        ArrayList<Integer> redList = manager.send(20,3);
+        ArrayList<Integer> redList = manager.send(50,3);
 
         //三个普通成员去收红包
         one.receive(redList);
