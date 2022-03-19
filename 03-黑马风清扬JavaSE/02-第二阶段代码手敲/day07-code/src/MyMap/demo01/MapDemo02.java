@@ -1,53 +1,53 @@
 package MyMap.demo01;
 
 /**
- * @author ÀîÃ÷
- * @date 2021Äê06ÔÂ28ÈÕ 14:41
+ * @author ææ˜
+ * @date 2021å¹´06æœˆ28æ—¥ 14:41
  */
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
-    Map¼¯ºÏµÄ»ù±¾¹¦ÄÜ£º
-        V put(K key,V value)£ºÌí¼ÓÔªËØ
-        V remove(Object key)£º¸ù¾İ¼üÉ¾³ı¼üÖµ¶ÔÔªËØ
-        void clear()£ºÒÆ³ıËùÓĞµÄ¼üÖµ¶ÔÔªËØ
-        boolean containsKey(Object key)£ºÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄ¼ü
-        boolean containsValue(Object value)£ºÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄÖµ(×ÔÑ§)
-        boolean isEmpty()£ºÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
-        int size()£º¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞ¼üÖµ¶ÔµÄ¸öÊı
+    Mapé›†åˆçš„åŸºæœ¬åŠŸèƒ½ï¼š
+        V put(K key,V value)ï¼šæ·»åŠ å…ƒç´ 
+        V remove(Object key)ï¼šæ ¹æ®é”®åˆ é™¤é”®å€¼å¯¹å…ƒç´ 
+        void clear()ï¼šç§»é™¤æ‰€æœ‰çš„é”®å€¼å¯¹å…ƒç´ 
+        boolean containsKey(Object key)ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®
+        boolean containsValue(Object value)ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„å€¼(è‡ªå­¦)
+        boolean isEmpty()ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
+        int size()ï¼šé›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­é”®å€¼å¯¹çš„ä¸ªæ•°
  */
 public class MapDemo02 {
     public static void main(String[] args) {
-        //´´½¨¼¯ºÏ¶ÔÏó
+        //åˆ›å»ºé›†åˆå¯¹è±¡
         Map<String,String> map = new HashMap<>();
 
-        //Ìí¼ÓÔªËØ
-        map.put("ÕÅÎŞ¼É","ÕÔÃô");
-        map.put("¹ù¾¸","»ÆÈØ");
-        map.put("Ñî¹ı","Ğ¡ÁúÅ®");
+        //æ·»åŠ å…ƒç´ 
+        map.put("å¼ æ— å¿Œ","èµµæ•");
+        map.put("éƒ­é–","é»„è“‰");
+        map.put("æ¨è¿‡","å°é¾™å¥³");
 
 
-        //V remove(Object key)£º¸ù¾İ¼üÉ¾³ı¼üÖµ¶ÔÔªËØ
-        //System.out.println(map.remove("¹ù¾¸"));  //»ÆÈØ
-        //System.out.println(map.remove("¹ùÏå"));  //null
+        //V remove(Object key)ï¼šæ ¹æ®é”®åˆ é™¤é”®å€¼å¯¹å…ƒç´ 
+        //System.out.println(map.remove("éƒ­é–"));  //é»„è“‰
+        //System.out.println(map.remove("éƒ­è¥„"));  //null
 
-        //void clear()£ºÒÆ³ıËùÓĞµÄ¼üÖµ¶ÔÔªËØ
+        //void clear()ï¼šç§»é™¤æ‰€æœ‰çš„é”®å€¼å¯¹å…ƒç´ 
         //map.clear();
 
 
-        //boolean containsKey(Object key)£ºÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄ¼ü
-        //System.out.println(map.containsKey("¹ù¾¸"));
-        //System.out.println(map.containsKey("¹ùÏå"));
+        //boolean containsKey(Object key)ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®
+        //System.out.println(map.containsKey("éƒ­é–"));
+        //System.out.println(map.containsKey("éƒ­è¥„"));
 
-        //boolean isEmpty()£ºÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
+        //boolean isEmpty()ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
         System.out.println(map.isEmpty());
 
-        //int size()£º¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞ¼üÖµ¶ÔµÄ¸öÊı
+        //int size()ï¼šé›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­é”®å€¼å¯¹çš„ä¸ªæ•°
         System.out.println(map.size());
 
-        //Êä³ö¼¯ºÏ¶ÔÏó
+        //è¾“å‡ºé›†åˆå¯¹è±¡
         System.out.println(map);
     }
 }
