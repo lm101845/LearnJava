@@ -4,6 +4,10 @@ package exer;
  * @Author liming
  * @Date 2022/5/30 21:59
  **/
+
+/**
+ * 二维数组求和
+ */
 public class ArrayExer1 {
     public static void main(String[] args) {
         int[][] arr = new int[][]{{3,5,8},{12,9},{7,0,6,4}};

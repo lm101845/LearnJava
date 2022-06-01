@@ -13,6 +13,7 @@ package exer;
  2. 每一行的第一个元素和最后一个元素都是 1
  3. 从第三行开始, 对于非第一个元素和最后一个元素的元素。即：
 yanghui[i][j] = yanghui[i-1][j-1] + yanghui[i-1][j]; ——注：这个规律只适用于【非首末】元素
+ 4.杨辉三角作用：(x+y)^n中的各项系数就是杨辉三角的值
  *
  */
 public class YangHuiTriangeTest {
