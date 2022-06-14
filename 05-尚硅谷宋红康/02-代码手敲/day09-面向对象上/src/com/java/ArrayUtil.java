@@ -99,7 +99,7 @@ public class ArrayUtil {
 //		i = j;
 //		j = temp;
 //	}
-    //正确的：交换数组中指定两个位置元素的值
+    //正确的：交换数组中指定两个位置元素的值——使用应用数据类型
     public void swap(int[] arr,int i,int j){
         int temp = arr[i];
         arr[i] = arr[j];
