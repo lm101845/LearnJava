@@ -5,6 +5,7 @@ public class Bank {
 
 	private Customer[] customers;// 存放多个客户的数组
 	private int numberOfCustomers;// 记录客户的个数
+	//客户的个数和数组的长度不是一回事！！！
 
 	public Bank() {
 		customers = new Customer[10];
