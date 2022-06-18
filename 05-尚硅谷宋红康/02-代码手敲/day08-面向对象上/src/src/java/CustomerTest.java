@@ -26,7 +26,7 @@ package src.java;
  *
  * 3. 说明：
  * 		3.1 关于权限修饰符：默认方法的权限修饰符先都使用public
- * 			Java规定的4种权限修饰符：private、public、缺省、protected  -->封装性再细说
+ * 			Java规定的4种权限修饰符：private、缺省、protected、public -->封装性再细说
  *
  * 		3.2 返回值类型： 有返回值  vs 没有返回值
  * 			3.2.1  如果方法有返回值，则必须在方法声明时，指定返回值的类型。同时，方法中，需要使用
