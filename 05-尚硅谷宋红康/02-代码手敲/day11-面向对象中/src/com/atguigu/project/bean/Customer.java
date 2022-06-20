@@ -12,6 +12,9 @@ public class Customer {
     private String phone;// 电话号码
     private String email;// 电子邮箱
 
+    public Customer(String tom, int i) {
+    }
+
     public String getName() {
         return name;
     }
