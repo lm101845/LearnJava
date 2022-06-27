@@ -69,7 +69,6 @@ public class ExceptionTest1 {
 				System.out.print((char)data);
 				data = fis.read();
 			}
-			
 			fis.close();
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
