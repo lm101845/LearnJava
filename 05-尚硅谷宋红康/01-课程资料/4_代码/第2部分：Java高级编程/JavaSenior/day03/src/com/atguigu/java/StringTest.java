@@ -12,24 +12,7 @@ public class StringTest {
 
 
 
-    /*
-    结论：
-    1.常量与常量的拼接结果在常量池。且常量池中不会存在相同内容的常量。
-    2.只要其中有一个是变量，结果就在堆中。
-    3.如果拼接的结果调用intern()方法，返回值就在常量池中
-     */
-    @Test
-    public void test4(){
-        String s1 = "javaEEhadoop";
-        String s2 = "javaEE";
-        String s3 = s2 + "hadoop";
-        System.out.println(s1 == s3);//false
 
-        final String s4 = "javaEE";//s4:常量
-        String s5 = s4 + "hadoop";
-        System.out.println(s1 == s5);//true
-
-    }
 
     @Test
     public void test3(){
