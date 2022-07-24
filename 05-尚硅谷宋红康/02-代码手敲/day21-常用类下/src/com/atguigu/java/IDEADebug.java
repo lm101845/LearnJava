@@ -17,8 +17,7 @@ public class IDEADebug {
 
         System.out.println(sb);//"null"
 
-         StringBuffer sb1 = new StringBuffer(str);//抛异常NullPointerException
+        StringBuffer sb1 = new StringBuffer(str);//抛异常NullPointerException
         System.out.println(sb1);//
-
     }
 }

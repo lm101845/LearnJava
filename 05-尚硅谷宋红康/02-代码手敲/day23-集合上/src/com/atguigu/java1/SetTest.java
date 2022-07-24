@@ -1,5 +1,10 @@
 package com.atguigu.java1;
 
+/**
+ * @Author liming
+ * @Date 2022/7/23 22:41
+ **/
+
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -13,9 +18,9 @@ import java.util.Set;
  * |----Collection接口：单列集合，用来存储一个一个的对象
  *          |----Set接口：存储无序的、不可重复的数据   -->高中讲的“集合”
  *              |----HashSet：作为Set接口的主要实现类；线程不安全的；可以存储null值
- *                  |----LinkedHashSet：作为HashSet的子类；遍历其内部数据时，可以按照添加的顺序遍历
+ *                  |----LinkedHashSet(和链表有些联系)：作为HashSet的子类；遍历其内部数据时，可以按照添加的顺序遍历
  *                                      对于频繁的遍历操作，LinkedHashSet效率高于HashSet.
- *              |----TreeSet：可以按照添加对象的指定属性，进行排序。
+ *              |----TreeSet(放入TreeSet中的数据，必须是同一个类中new的对象)：可以按照添加对象的指定属性，进行排序。
  *
  *
  *  1. Set接口中没有额外定义新的方法，使用的都是Collection中声明过的方法。
@@ -23,13 +28,9 @@ import java.util.Set;
  *  2. 要求：向Set(主要指：HashSet、LinkedHashSet)中添加的数据，其所在的类一定要重写hashCode()和equals()
  *     要求：重写的hashCode()和equals()尽可能保持一致性：相等的对象必须具有相等的散列码
  *      重写两个方法的小技巧：对象中用作 equals() 方法比较的 Field，都应该用来计算 hashCode 值。
- *
- *
- * @author shkstart
- * @create 2019 下午 3:40
  */
 public class SetTest {
-    /*
+    /**
     一、Set：存储无序的、不可重复的数据
     以HashSet为例说明：
     1. 无序性：不等于随机性。存储的数据在底层数组中并非按照数组索引的顺序添加，而是根据数据的哈希值决定的。
@@ -53,26 +54,25 @@ public class SetTest {
         总结：七上八下
 
         HashSet底层：数组+链表的结构。
-
      */
 
-    @Test
-    public void test1(){
-        Set set = new HashSet();
-        set.add(456);
-        set.add(123);
-        set.add(123);
-        set.add("AA");
-        set.add("CC");
-        set.add(new User("Tom",12));
-        set.add(new User("Tom",12));
-        set.add(129);
+        @Test
+        public void test1(){
+            Set set = new HashSet();
+            set.add(456);
+            set.add(123);
+            set.add(123);
+            set.add("AA");
+            set.add("CC");
+            set.add(new User("Tom",12));
+            set.add(new User("Tom",12));
+            set.add(129);
 
-        Iterator iterator = set.iterator();
-        while(iterator.hasNext()){
-            System.out.println(iterator.next());
+            Iterator iterator = set.iterator();
+            while(iterator.hasNext()){
+                System.out.println(iterator.next());
+            }
         }
-    }
 
     //LinkedHashSet的使用
     //    //LinkedHashSet作为HashSet的子类，在添加数据的同时，每个数据还维护了两个引用，记录此数据前一个

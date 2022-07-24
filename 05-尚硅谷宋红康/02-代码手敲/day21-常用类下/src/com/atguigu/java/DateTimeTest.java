@@ -16,14 +16,14 @@ import java.util.Date;
  * JDK 8之前日期和时间的API测试
  *  1. System类中currentTimeMillis();
  *  2. java.util.Date和子类java.sql.Date
- *  3. SimpleDateFormat
+ *  3. SimpleDateFormat——对日期Date类的格式化解析(只能操作Date,不能操作Calendar)
  *  4. Calendar
  *
  *     SimpleDateFormat的使用：SimpleDateFormat对日期Date类的格式化和解析
  *
  *     1.两个操作：
- *     1.1 格式化：日期 --->字符串
- *     1.2 解析：格式化的逆过程，字符串 ---> 日期
+ *     1.1 格式化(format)：日期 --->字符串
+ *     1.2 解析(parse)：格式化的逆过程，字符串 ---> 日期
  *
  *     2.SimpleDateFormat的实例化
  */
@@ -75,8 +75,8 @@ public class DateTimeTest {
             String birth = "2020-09-08";
 
             SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-            Date date = sdf1.parse(birth);
-//        System.out.println(date);
+            Date date = sdf1.parse(birth);  //parse:把字符串解析为日期
+            System.out.println(date);
 
             java.sql.Date birthDate = new java.sql.Date(date.getTime());   //转换为时间戳
             System.out.println(birthDate);
