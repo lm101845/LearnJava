@@ -1,5 +1,10 @@
 package com.atguigu.java;
 
+/**
+ * @Author liming
+ * @Date 2022/8/6 18:26
+ **/
+
 import org.junit.Test;
 
 import java.util.*;
@@ -20,12 +25,8 @@ import java.util.*;
  *
  * 3.如何自定义泛型结构：泛型类、泛型接口；泛型方法。见 GenericTest1.java
  *
- * @author shkstart
- * @create 2019 上午 9:59
  */
 public class GenericTest {
-
-
     //在集合中使用泛型之前的情况：
     @Test
     public void test1(){
@@ -35,24 +36,23 @@ public class GenericTest {
         list.add(76);
         list.add(89);
         list.add(88);
-        //问题一：类型不安全
-//        list.add("Tom");
 
-        for(Object score : list){
+        //问题一：类型不安全
+        //list.add("Tom");
+
+        //System.out.println(list);
+        for(Object score: list){
             //问题二：强转时，可能出现ClassCastException
             int stuScore = (Integer) score;
-
             System.out.println(stuScore);
-
         }
-
     }
 
     //在集合中使用泛型的情况：以ArrayList为例
     @Test
     public void test2(){
-       ArrayList<Integer> list =  new ArrayList<Integer>();
-
+        //泛型是一个类型，不能是基本数据类型，需要是包装类
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(78);
         list.add(87);
         list.add(99);
@@ -64,43 +64,39 @@ public class GenericTest {
 //        for(Integer score : list){
 //            //避免了强转操作
 //            int stuScore = score;
-//
 //            System.out.println(stuScore);
-//
 //        }
-        //方式二：迭代器的方式
+
+        //方式二：迭代器
         Iterator<Integer> iterator = list.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()){
             int stuScore = iterator.next();
             System.out.println(stuScore);
         }
-
     }
 
     //在集合中使用泛型的情况：以HashMap为例
     @Test
     public void test3(){
-//        Map<String,Integer> map = new HashMap<String,Integer>();
+        //Map<String,Integer> map = new HashMap<String,Integer>();
         //jdk7新特性：类型推断
-        Map<String,Integer> map = new HashMap<>();
-
+        Map<String, Integer> map = new HashMap<String,Integer>();
         map.put("Tom",87);
         map.put("Jerry",87);
         map.put("Jack",67);
 
-//        map.put(123,"ABC");
-        //泛型的嵌套
-        Set<Map.Entry<String,Integer>> entry = map.entrySet();
-        Iterator<Map.Entry<String, Integer>> iterator = entry.iterator();
+        //map.put(123,"ABC");
 
-        while(iterator.hasNext()){
+        //泛型的嵌套
+        //Map.Entry的问题：因为Entry是内部的接口,所以用的是Map.Entry,如果上面写了import java.util.map.*,那么前面的Map.就可以不用写了
+        Set<Map.Entry<String, Integer>> entry = map.entrySet();
+        Iterator<Map.Entry<String, Integer>> iterator = entry.iterator();
+        while (iterator.hasNext()){
             Map.Entry<String, Integer> e = iterator.next();
+            //System.out.println(e);
             String key = e.getKey();
             Integer value = e.getValue();
             System.out.println(key + "----" + value);
         }
-
     }
-
-
 }
