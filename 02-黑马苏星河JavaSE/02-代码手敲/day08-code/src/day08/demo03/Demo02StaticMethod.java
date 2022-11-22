@@ -37,7 +37,7 @@ public class Demo02StaticMethod {
 
         myMethod();
         //这个方法没有类名称也是可以正常运行的
-        // 对于本类当中的静态方法，可以省略类名称
+        // 对于【本类当中】的静态方法，可以省略类名称
         //这个在编译的时候会给你等效翻译成为:
         Demo02StaticMethod.myMethod();  //和myMethod();完全等效
     }

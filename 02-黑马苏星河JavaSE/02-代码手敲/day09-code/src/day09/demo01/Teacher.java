@@ -16,6 +16,7 @@ public class Teacher extends Employee{
         //day09.MyMap.demo01.Teacher@75412c2f
 
         teacher.method();
+        //子类实例.父类方法
         //父类方法执行了
         //Teacher类中虽然什么都没写，但是会继承来自父类的method方法
 

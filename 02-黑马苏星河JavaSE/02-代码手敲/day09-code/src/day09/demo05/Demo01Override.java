@@ -15,7 +15,7 @@ package day09.demo05;
 2. 子类方法的【返回值】必须【小于等于】父类方法的返回值范围。
 小扩展提示：java.lang.Object类是所有类的公共最高父类（祖宗类），java.lang.String就是Object的子类。
 
-3. 子类方法的【权限】必须【大于等于】父类方法的权限修饰符。
+3. 子类方法的【权限】必须【大于等于】父类方法的权限修饰符。——子类胸襟更加光大
 小扩展提示：public > protected > (default) > private
 备注：(default)不是关键字default，而是什么都不写，留空。
  */

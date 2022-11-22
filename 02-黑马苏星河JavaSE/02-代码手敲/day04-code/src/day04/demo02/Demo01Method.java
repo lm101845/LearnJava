@@ -21,7 +21,7 @@ public class Demo01Method {
     }
 
     public static void printMethod(){
-        //        次数确定，我们使用for循环
+        //次数确定，我们使用for循环
         for (int j = 1; j <= 5; j++) {
 //            System.out.println("*");
 //            ln表示line，即换行的意思，去掉ln它就不换行了

@@ -35,7 +35,7 @@ public class Student {
         //构造方法的名称和类名称是完全一样的，连大小写都一样
         //而且构造方法前面没有void
         //这种特殊格式的构造方法用途就是用来创建对象的
-        System.out.println("无参构造方法执行 了!!!");
+        System.out.println("无参构造方法执行了!!!");
         //return 100;
     }
 

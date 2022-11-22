@@ -25,7 +25,7 @@ public class Demo01ExtendsFiled {
 
         //所以我们更关系创建子类对象
         Zi zi = new Zi();
-        System.out.println(zi.numFu);  //59
+        System.out.println(zi.numFu);  //59   //子类实例.父类成员变量
         System.out.println(zi.numZi);  //27
         System.out.println("=======================");
 
@@ -33,7 +33,7 @@ public class Demo01ExtendsFiled {
         //这个num父类和子类都有，重名了
         //等号左边是谁，就优先用谁，没有则向上找。
         //优先用子类的num变量值
-        //200
+        //100
 
         System.out.println("=======================");
         //System.out.println(zi.abc);  //父类和子类都没有这个变量，就编译报错

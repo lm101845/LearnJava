@@ -17,7 +17,7 @@ public class Demo01MultiField {
     public static void main(String[] args) {
         //使用多态的写法：父类引用指向子类对象
         Fu obj = new Zi();
-        System.out.println(obj.num);  //10
+        System.out.println(obj.num);  //10  父的num,不找子的
 
         //System.out.println(obj.age);
         //错误写法，Fu会向上找，一直找到Object，不会向下查找Zi！！！

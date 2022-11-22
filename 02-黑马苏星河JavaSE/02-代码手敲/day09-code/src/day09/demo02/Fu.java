@@ -6,7 +6,7 @@ package day09.demo02;
  */
 public class Fu {
     int numFu = 59;
-    int num = 100;
+    int num = 200;
     //为了方面前面不写修饰符了，这样就可以直接访问了
 
     public void methodFu(){

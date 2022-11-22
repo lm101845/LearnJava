@@ -17,6 +17,7 @@ public class Demo02StringPool {
         String str2 = "abc";
         char[] charArray = {'a','b','c'};
         String str3 = new String(charArray);
+        System.out.println(str3);
         //全都算上一共有3个字符串
 
         System.out.println(str1 == str2);  //true

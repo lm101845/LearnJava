@@ -31,7 +31,7 @@ public interface MyInterfacePrivateA {
 //        System.out.println("BBB");
 //        System.out.println("CCC");
 //        重复代码不要重复写了，把重复代码单独写一个代码，进行调用即可
-        methodCommon();
+//        methodCommon();
     }
 
     public default void methodDefault2(){
@@ -39,13 +39,13 @@ public interface MyInterfacePrivateA {
 //        System.out.println("AAA");
 //        System.out.println("BBB");
 //        System.out.println("CCC");
-        methodCommon();
+//        methodCommon();
 
     }
 
-    private  void methodCommon(){
-        System.out.println("AAA");
-        System.out.println("BBB");
-        System.out.println("CCC");
-    }
+    // private void methodCommon(){
+    //    System.out.println("AAA");
+    //    System.out.println("BBB");
+    //    System.out.println("CCC");
+    //}
 }

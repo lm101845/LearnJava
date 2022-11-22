@@ -15,6 +15,8 @@ package day10.demo05;
 对比一下：
 成员变量：编译看左边，运行还看左边。——成员变量不适用此规则！！！
 成员方法：编译看左边，运行看右边。
+ https://www.zhihu.com/question/457976578/answer/1870488894
+ https://www.zhihu.com/question/30082151/answer/885016918——花木兰替父从军
  */
 public class Demo02MultiMethod {
     public static void main(String[] args) {

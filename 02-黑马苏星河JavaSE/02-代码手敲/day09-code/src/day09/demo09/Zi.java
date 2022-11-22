@@ -40,7 +40,7 @@ public class Zi extends Fu {
 
     public Zi(int n,int m){
         //2个参数构造方法又反过来调用无参构造方法
-        //你这是在戏耍变异器，它会报错
+        //你这是在戏耍编译器，它会报错
         //this();
         System.out.println(m + n);
     }

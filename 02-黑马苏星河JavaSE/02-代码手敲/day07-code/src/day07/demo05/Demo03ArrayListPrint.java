@@ -45,7 +45,6 @@ public class Demo03ArrayListPrint {
                 System.out.print(name + "}");
             } else {
                 System.out.print(name + "@");
-
             }
         }
     }

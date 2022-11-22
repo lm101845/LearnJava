@@ -17,9 +17,9 @@ TIPS£º
 int x = 2;
 1 < x && x < 3
 */
-public class Demo09Logic{
+public class Demo11Logic{
 	public static void main(String[] args){
-			System.out.println(true && false); // false
+		System.out.println(true && false); // false
 		// true && true --> true
 		System.out.println(3 < 4 && 10 > 5); // true
 		System.out.println("============");
