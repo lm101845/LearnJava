@@ -13,7 +13,7 @@ package day11.demo01;
 }
 
 注意事项：
-对于类、方法来说，abstract关键字和final关键字不能同时使用，因为矛盾。
+对于类、方法来说，abstract关键字和final关键字不能同时使用，因为矛盾。(抽象方法必须重写，而final方法不允许重写，所以矛盾)
  */
 public abstract class Fu {
     public final void method(){

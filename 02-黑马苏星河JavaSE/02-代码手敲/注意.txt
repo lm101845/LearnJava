@@ -1,3 +1,6 @@
 从day04-code开始，开始使用IDEA编辑器写代码，而不是notepad++了。
 
-复习进度：day04-day07复习完。
+复习进度：
+day04-day07复习完
+day08-day11复习完
+
