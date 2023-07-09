@@ -19,11 +19,11 @@ public class ClassLoaderTest {
         ClassLoader bootstrapClassLoader = extClassLoader.getParent();
         System.out.println(bootstrapClassLoader);//null
 
-        //对于用户自定义类来说：默认使用系统类加载器进行加载
+        //对于【用户自定义类】来说：默认使用【系统类加载器】进行加载
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         System.out.println(classLoader);//sun.misc.Launcher$AppClassLoader@18b4aac2
 
-        //String类使用引导类加载器进行加载的。---> Java的核心类库都是使用引导类加载器进行加载的。
+        //String类使用引导类加载器进行加载的。---> Java的【核心类库】都是使用【引导类加载器】进行加载的。
         ClassLoader classLoader1 = String.class.getClassLoader();
         System.out.println(classLoader1);//null
 
